@@ -180,7 +180,7 @@ if (searchGrid) {
                 <div class="card-info">
                     <h3>${pet.nome}</h3>
                     <p style="font-size: 13px; color: #004d40; font-weight: bold; margin-bottom: 5px;">🏠 ONG: ${pet.ong || 'Pata Acolhida'}</p>
-                    <p class="pet-details">${pet.idade} • ${pet.porte} • ${pet.sexo}</p>
+                    <p class="pet-details">${pet.especie} • ${pet.idade} • ${pet.porte} • ${pet.sexo}</p>
                     <p class="pet-location">📍 ${pet.cidade}</p>
                     <button class="btn-quero-adotar" onclick="abrirModalAdotar(${index}, '${pet.nome}')">🐾 Quero Adotar</button>
                 </div>
