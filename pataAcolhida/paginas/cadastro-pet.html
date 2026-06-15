@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da ONG - Cadastrar Pet</title>
+    <link rel="stylesheet" href="../style.css"> </head>
+<body>
+
+    <header>
+        <h2>🐾 Painel da ONG - Pata Acolhida</h2>
+        <nav>
+            <a href="../index.html">Voltar para o Site</a>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <h2>Cadastrar Novo Animal para Adoção</h2>
+        <p>Preencha as informações abaixo para listar o pet no site.</p>
+
+        <form id="form-cadastro-pet">
+
+            <div class="form-group">
+                <label for="foto-pet">Link da Foto (URL):</label>
+                <input type="url" id="foto-pet" placeholder="Cole o link de uma imagem da internet" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nome-pet">Nome do Pet:</label>
+                <input type="text" id="nome-pet" placeholder="Ex: Scooby" required>
+            </div>
+
+            <div class="form-group">
+                <label for="especie-pet">Espécie do Pet:</label>
+                <select id="especie-pet" required>
+                    <option value="">Selecione...</option>
+                    <option value="Macho">Cachorro</option>
+                    <option value="Fêmea">Gato</option>
+                    <option value="Fêmea">Macaco</option>
+                    <option value="Fêmea">Pássaro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="idade-pet">Idade:</label>
+                <input type="text" id="idade-pet" placeholder="Ex: 2 anos ou 3 meses" required>
+            </div>
+
+            <div class="form-group">
+                <label for="historia-pet">História do Pet</label>
+                <input type="text" id="historia-pet" placeholder="Ex: Encontrado na Rua" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descricao-pet">Descrição:</label>
+                <input type="text" id="descricao-pet" placeholder="Ex: Cachorro Amigavel" required>
+            </div>
+
+            <div class="form-group">
+                <label for="porte-pet">Porte:</label>
+                <select id="porte-pet" required>
+                    <option value="">Selecione...</option>
+                    <option value="Pequeno">Pequeno</option>
+                    <option value="Médio">Médio</option>
+                    <option value="Grande">Grande</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sexo-pet">Sexo:</label>
+                <select id="sexo-pet" required>
+                    <option value="">Selecione...</option>
+                    <option value="Macho">Macho</option>
+                    <option value="Fêmea">Fêmea</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cidade-pet">Cidade/UF:</label>
+                <input type="text" id="cidade-pet" placeholder="Ex: Vila Velha - ES" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ong-pet">ONG do Pet:</label>
+                <input type="text" id="ong-pet" placeholder="Ex: Animais CarentesES" required>
+            </div>
+
+
+            <button type="submit" class="btn-enviar-cadastro">Salvar Animal</button>
+        </form>
+    </main>
+    <section class="form-container" style="max-width: 800px; margin-top: 20px;">
+        <h2>Pedidos de Adoção Recebidos</h2>
+        <p>Abaixo estão as pessoas interessadas nos animais cadastrados por você.</p>
+        
+        <table class="adm-table">
+            <thead>
+                <tr>
+                    <th>Animal</th>
+                    <th>Adotante</th>
+                    <th>WhatsApp</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-pedidos-ong">
+                </tbody>
+        </table>
+        <div id="mensagem-vazia-pedidos-ong" style="display: none; text-align: center; margin-top: 20px; color: #777;">
+            Nenhuma solicitação de adoção para os seus pets ainda.
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
