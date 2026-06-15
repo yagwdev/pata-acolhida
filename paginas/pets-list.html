@@ -6,7 +6,7 @@
     <title>Encontrar Pet - Pata Acolhida</title>
     <link rel="stylesheet" href="../style.css"> </head>
 <body>
-
+    <!-- Cabeçalho com navegação e caminhos relativos corrigidos -->
     <header>
         <img src="../imagens/logo-pata.png" alt="Logo do Pata Acolhida" class="logo-site">
         <nav>
@@ -26,22 +26,24 @@
             <h2>Todos os Pets para Adoção</h2>
             <p>Explore todos os amigos que estão à procura de um novo lar.</p>
         </div>
-
+        <!-- Grade onde os cards dos pets serão carregados dinamicamente via JS -->
         <div class="search-pets-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1200px; margin: 0 auto; width: 100%;">
             </div>
-
+        <!-- Mensagem de aviso caso nenhum pet seja encontrado -->
         <div id="lista-vazia-busca" style="display: none; text-align: center; margin: 40px 0; color: #777;">
             Nenhum pet cadastrado no momento.
         </div>
     </main>
+    <!-- Janela modal oculta para o formulário de solicitação de adoção -->
     <div id="modal-adotar" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); align-items: center; justify-content: center; z-index: 1000;">
         <div style="background-color: white; padding: 30px; border-radius: 16px; width: 90%; max-width: 450px; position: relative; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+            <!-- Botão para fechar a janela do formulário -->
             <span style="position: absolute; top: 15px; right: 20px; font-size: 24px; cursor: pointer; color: #666;" onclick="fecharModalAdotar()">&times;</span>
             
             <h3 style="color: #004d40;">Formulário de Adoção</h3>
             <p>Você está demonstrando interesse em adotar o(a) <strong id="adotar-nome-pet">...</strong></p>
             <br>
-            
+            <!-- Guarda o ID ou index do pet selecionado para o envio do formulário -->
             <form id="form-solicitar-adocao">
                 <input type="hidden" id="adotar-index-pet">
 

@@ -18,6 +18,7 @@
         <h2>Cadastrar Novo Animal para Adoção</h2>
         <p>Preencha as informações abaixo para listar o pet no site.</p>
 
+        <!-- Formulário para inclusão de novos animais no sistema -->
         <form id="form-cadastro-pet">
 
             <div class="form-group">
@@ -85,7 +86,7 @@
                 <input type="text" id="ong-pet" placeholder="Ex: Animais CarentesES" required>
             </div>
 
-
+            <!-- Dispara o evento de envio para armazenamento dos dados -->
             <button type="submit" class="btn-enviar-cadastro">Salvar Animal</button>
         </form>
     </main>
@@ -93,6 +94,7 @@
         <h2>Pedidos de Adoção Recebidos</h2>
         <p>Abaixo estão as pessoas interessadas nos animais cadastrados por você.</p>
         
+        <!-- Exibe os dados de contato dos interessados na adoção -->
         <table class="adm-table">
             <thead>
                 <tr>
@@ -105,6 +107,7 @@
             <tbody id="tabela-pedidos-ong">
                 </tbody>
         </table>
+        <!-- Aviso ativado por JS se não houver registros na tabela -->
         <div id="mensagem-vazia-pedidos-ong" style="display: none; text-align: center; margin-top: 20px; color: #777;">
             Nenhuma solicitação de adoção para os seus pets ainda.
         </div>

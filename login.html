@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: #f1eded; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0;">
-
+    <!-- Caixa principal do formulário centralizado -->
     <main class="form-container" style="margin: 0; width: 100%; max-width: 400px;">
         <h2 style="text-align: center;">Acessar o Sistema</h2>
         <p style="text-align: center;">Selecione seu perfil e faça login.</p>
-
+        <!-- Formulário de autenticação -->
         <form id="form-login">
+            <!-- Seleção de nível de acesso: ADM ou ONG -->
             <div class="form-group">
                 <label for="login-perfil">Tipo de Perfil:</label>
                 <select id="login-perfil" required>
@@ -21,12 +22,12 @@
                     <option value="org">ONG Parceira</option>
                 </select>
             </div>
-
+            <!-- Campo de entrada de e-mail com validação nativa -->
             <div class="form-group">
                 <label for="login-email">E-mail:</label>
                 <input type="email" id="login-email" placeholder="Ex: yagobacana@pata.com" required>
             </div>
-
+            <!-- Campo de senha oculta -->
             <div class="form-group">
                 <label for="login-senha">Senha:</label>
                 <input type="password" id="login-senha" placeholder="••••••••" required>
@@ -34,7 +35,7 @@
 
             <button type="submit" class="btn-enviar-cadastro">Entrar</button>
         </form>
-        
+        <!-- Link de retorno para a página inicial -->
         <div style="text-align: center; margin-top: 15px;">
             <a href="index.html" style="color: #004d40; text-decoration: none; font-size: 14px; font-weight: bold;">← Voltar ao início</a>
         </div>

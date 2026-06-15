@@ -20,6 +20,7 @@
     <main class="form-container" style="max-width: 900px;"> <h2>Gerenciamento de Pets Cadastrados</h2>
         <p>Abaixo você pode visualizar, monitorar e remover os animais cadastrados no sistema.</p>
 
+        <!-- Tabela de listagem e controle dos animais cadastrados -->
         <table class="adm-table">
             <thead>
                 <tr>
@@ -34,6 +35,7 @@
                 </tbody>
         </table>
         
+        <!-- Aviso exibido via JS se a tabela de pets não tiver dados -->
         <div id="mensagem-vazia" style="display: none; text-align: center; margin-top: 20px; color: #777;">
             Nenhum animal cadastrado pelas ONGs ainda.
         </div>
@@ -43,6 +45,7 @@
         <h2>Relatório Geral de Solicitações de Adoção</h2>
         <p>Monitore todos os contatos de interesse de adoção realizados no portal.</p>
         
+        <!-- Tabela de monitoramento das intenções de adoção registradas -->
         <table class="adm-table">
             <thead>
                 <tr>
@@ -56,18 +59,20 @@
             <tbody id="tabela-pedidos-adm">
                 </tbody>
         </table>
+        <!-- Aviso exibido via JS se não houver nenhum pedido de adoção -->
         <div id="mensagem-vazia-pedidos-adm" style="display: none; text-align: center; margin-top: 20px; color: #777;">
             Nenhuma intenção de adoção registrada no sistema global.
         </div>
     </main>
 
-
+    <!-- Janela flutuante modal para edição dos dados do animal selecionado -->
     <div id="modal-editar" class="modal-container" style="display: none;">
         <div class="modal-content">
             <span class="btn-fechar-modal" onclick="fecharModal()">&times;</span>
             <h3>Editar Informações do Pet</h3>
             <br>
             <form id="form-editar-pet">
+                <!-- Input invisível que armazena a posição do elemento editado -->
                 <input type="hidden" id="editar-index">
 
                 <div class="form-group">
