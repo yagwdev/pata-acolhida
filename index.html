@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pata Acolhida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>🐾 Pata Acolhida</h2>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="paginas/pets-list.html">Encontrar Pet</a>
+            <a href="paginas/how-adopt.html">Como Adotar</a>
+            <a href="paginas/ongs.html">ONGs Parceiras</a>
+            <a href="paginas/about-we.html">Sobre Nós</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" style="text-decoration: none;"><button>Entrar</button></a> 
+        </div>
+    </header> 
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Encontre seu novo companheiro</h1>
+            <p>Conectando animais resgatados a famílias que desejam adotar de forma responsável.</p>
+
+            <div class="hero-buttons">
+                <a href="paginas/pets-list.html" style="text-decoration: none;">
+                    <button class="btn-buscar">🐾 Encontrar um Pet</button>
+                </a>
+                <a href="paginas/how-adopt.html" style="text-decoration: none;">
+                    <button class="btn-como-funciona">❓ Como Funciona</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="imagens/cat.png" alt="Gato para adoção">
+        </div>
+    </main>
+
+    <section class="counters-container">
+        <div class="counter-box">
+            <span class="counter-icon">👥</span> 
+            <div class="counter-text">
+                <h3>+20</h3> <p>Adoções realizadas</p>
+            </div>
+        </div>
+
+        <div class="counter-box">
+            <span class="counter-icon">🐾</span>
+            <div class="counter-text">
+                <h3>+52</h3>
+                <p>Animais disponíveis</p>
+            </div>
+        </div>
+
+        <div class="counter-box">
+            <span class="counter-icon">🏢</span>
+            <div class="counter-text">
+                <h3>4</h3>
+                <p>ONGs parceiras</p>
+            </div>
+        </div>
+
+        <div class="counter-box">
+            <span class="counter-icon">❤️</span>
+            <div class="counter-text">
+                <h3>16</h3>
+                <p>Vidas transformadas</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-pets">
+        <div class="section-title">
+            <h2>Animais em Destaque</h2>
+            <p>Conheça alguns dos perfis mais recentes cadastrados na plataforma.</p>
+        </div>
+
+        <div class="carousel-container">
+            <button class="arrow-btn">◀</button>
+            
+            <div class="pets-grid">
+                
+                <div class="pet-card">
+                    <div class="card-image-wrapper">
+                        <img src="imagens/dog rodrigo.jpg" alt="Cão Rodrigo" class="pet-img">
+                        <button class="favorite-btn">❤️</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Rodrigo</h3>
+                        <p class="pet-details">4 anos • Médio • Macho</p>
+                        <p class="pet-location">📍 Serra - ES</p>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <div class="card-image-wrapper">
+                        <img src="imagens/macaquinho roberto.jpg" alt="Ramon" class="pet-img">
+                        <button class="favorite-btn">❤️</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Ramon</h3>
+                        <p class="pet-details">3 meses • Pequeno • Macho</p>
+                        <p class="pet-location">📍 Vitória - ES</p>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <div class="card-image-wrapper">
+                        <img src="imagens/whats new scooby doo.jpg" alt="Cão Scooby-Doo" class="pet-img">
+                        <button class="favorite-btn">❤️</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Scooby-Doo</h3>
+                        <p class="pet-details">3 anos • Médio • Macho</p>
+                        <p class="pet-location">📍 Xique-Xique - BA</p>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <div class="card-image-wrapper">
+                        <img src="imagens/ramster luis.jpg" alt="Hamster Luis" class="pet-img">
+                        <button class="favorite-btn">❤️</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Luis</h3>
+                        <p class="pet-details">2 meses • Pequeno • Macho</p>
+                        <p class="pet-location">📍 Terra Vermelha - ES</p>
+                    </div>
+                </div>
+
+            </div> 
+            
+            <button class="arrow-btn">▶</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
