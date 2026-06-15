@@ -33,14 +33,14 @@ header nav a:hover {
 /* Botão Entrar (Apenas borda e texto verde) */
 .auth-buttons button:first-child {
     background-color: transparent;
-    border: 1px solid #004d40;
-    color: #004d40;
+    border: 1px solid #00c7a6;
+    color: #007adf;
     margin-right: 10px;
 }
 
 /* Botão Cadastrar (Preenchido com o verde principal) */
 .auth-buttons button:last-child {
-    background-color: #004d40;  /* Cor verde escura da Lar Pet */
+    background-color: #016454;  /* Cor verde escura da Lar Pet */
     border: none;
     color: white;
 }
