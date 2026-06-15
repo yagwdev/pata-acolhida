@@ -10,6 +10,7 @@ if (formCadastro) {
 
         // 3. Pegamos os valores que a ONG digitou nos campos
         const nome = document.getElementById('nome-pet').value;
+        const especie = document.getElementById('especie-pet').value;
         const idade = document.getElementById('idade-pet').value;
         const porte = document.getElementById('porte-pet').value;
         const sexo = document.getElementById('sexo-pet').value;
@@ -20,6 +21,7 @@ if (formCadastro) {
         // 4. Montamos uma caixinha (objeto) com as informações do pet
         const novoPet = {
             nome: nome,
+            especie: especie,
             idade: idade,
             porte: porte,
             sexo: sexo,
