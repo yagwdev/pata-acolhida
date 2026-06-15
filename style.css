@@ -18,6 +18,12 @@ header nav a {
     font-weight: 500;           /* Deixa a letra levemente mais cheinha */
 }
 
+.logo-site {
+    height: 60px !important; /* O !important obriga o navegador a usar esse tamanho */
+    width: auto !important;
+    object-fit: contain;
+}
+
 /* Efeito ao passar o mouse por cima do link (opcional, mas fica profissional!) */
 header nav a:hover {
     color: #1549aa;             /* Muda para o verde do projeto quando o mouse passa */
@@ -33,14 +39,14 @@ header nav a:hover {
 /* Botão Entrar (Apenas borda e texto verde) */
 .auth-buttons button:first-child {
     background-color: transparent;
-    border: 1px solid #00c7a6;
+    border: 1px solid #028a73;
     color: #007adf;
     margin-right: 10px;
 }
 
 /* Botão Cadastrar (Preenchido com o verde principal) */
 .auth-buttons button:last-child {
-    background-color: #016454;  /* Cor verde escura da Lar Pet */
+    background-color: #038b75;  /* Cor verde escura da Lar Pet */
     border: none;
     color: white;
 }
