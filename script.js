@@ -100,6 +100,7 @@ window.abrirModalEditar = function(index) {
     document.getElementById('editar-sexo').value = pet.sexo;
     document.getElementById('editar-cidade').value = pet.cidade;
     document.getElementById('editar-foto').value = pet.foto;
+    document.getElementById('editar-especie').value = pet.especie;
 
     modalEditar.style.display = 'flex';
 };
@@ -124,7 +125,8 @@ if (formEditar) {
             porte: document.getElementById('editar-porte').value,
             sexo: document.getElementById('editar-sexo').value,
             cidade: document.getElementById('editar-cidade').value,
-            foto: document.getElementById('editar-foto').value
+            foto: document.getElementById('editar-foto').value,
+            especie: document.getElementById('editar-especie').value
         };
 
         localStorage.setItem('petsCadastrados', JSON.stringify(petsSalvos));
