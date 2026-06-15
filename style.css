@@ -19,7 +19,7 @@ header nav a {
 }
 
 .logo-site {
-    height: 60px !important; /* O !important obriga o navegador a usar esse tamanho */
+    height: 100px !important; /* O !important obriga o navegador a usar esse tamanho */
     width: auto !important;
     object-fit: contain;
 }
