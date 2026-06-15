@@ -1,6 +1,6 @@
 # 🐾 Pata Acolhida
 
-Este projeto é um site desenvolvido como parte do trabalho prático da disciplina de **Introdução à Ciência da Computação (ICC)**. 
+Este projeto é um site desenvolvido como parte do trabalho prático da disciplina de **Introdução à Ciência da Computação (ICC)** da **Universidade Federal do Espirito Santo (UFES)**. 
 
 ## 🎯 Objetivo do Projeto
 A proposta do trabalho era identificar um problema real na sociedade ou uma necessidade de um grupo específico de pessoas e desenvolver uma solução tecnológica para ajudá-los. 
