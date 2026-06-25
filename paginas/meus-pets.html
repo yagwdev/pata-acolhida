@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Pets Adotados - Pata Acolhida</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <img src="../imagens/logo-pata.png" alt="Logo do Pata Acolhida" class="logo-site">
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="pets-list.html">Encontrar Pet</a>
+            <a href="how-adopt.html">Como Adotar</a>
+            <a href="ongs.html">ONGs Parceiras</a>
+            <a href="about-we.html">Sobre Nós</a>
+            <a href="meus-pets.html" style="font-weight: bold; color: #004d40;">Meus Pets</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="../login.html"><button>Entrar</button></a>
+        </div>
+    </header>
+
+    <main style="max-width: 900px; margin: 40px auto; padding: 0 20px; font-family: sans-serif;">
+        <h2>Meus Animais Adotados</h2>
+        <p style="color: #666; margin-bottom: 30px;">Gerencie o acompanhamento pós-adoção dos animais vinculados ao seu perfil.</p>
+
+        <div id="mensagem-sem-pets" style="display: none; background: #f9f9f9; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #eee;">
+            <p style="color: #666;">Você ainda não possui nenhuma adoção aprovada e registrada no sistema.</p>
+        </div>
+
+        <div id="container-meus-pets" style="display: flex; flex-direction: column; gap: 30px;"></div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

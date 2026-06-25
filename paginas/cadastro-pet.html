@@ -90,26 +90,48 @@
             <button type="submit" class="btn-enviar-cadastro">Salvar Animal</button>
         </form>
     </main>
-    <section class="form-container" style="max-width: 800px; margin-top: 20px;">
-        <h2>Pedidos de Adoção Recebidos</h2>
-        <p>Abaixo estão as pessoas interessadas nos animais cadastrados por você.</p>
+    <section class="form-container" style="max-width: 1000px; margin-top: 20px;">
+        <h2>Pedidos de Adoção Recebidos (Triagem de Segurança)</h2>
+        <p>Analise com atenção as 3 respostas cruciais para identificar contradições ou desinteresse antes de liberar seu contato.</p>
         
-        <!-- Exibe os dados de contato dos interessados na adoção -->
         <table class="adm-table">
             <thead>
                 <tr>
                     <th>Animal</th>
-                    <th>Adotante</th>
-                    <th>WhatsApp</th>
-                    <th>E-mail</th>
+                    <th>Dados do Adotante</th>
+                    <th style="width: 35%;">Respostas de Segurança</th>
+                    <th>Status</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody id="tabela-pedidos-ong">
                 </tbody>
         </table>
-        <!-- Aviso ativado por JS se não houver registros na tabela -->
+        
         <div id="mensagem-vazia-pedidos-ong" style="display: none; text-align: center; margin-top: 20px; color: #777;">
             Nenhuma solicitação de adoção para os seus pets ainda.
+        </div>
+    </section>
+
+    <section class="form-container" style="max-width: 1000px; margin-top: 20px;">
+        <h2>Acompanhamento Pós-Adoção (Status: Em Acompanhamento)</h2>
+        <p>Monitore os relatos e fotos enviados pelos adotantes após 1 semana, 1 mês e 3 meses.</p>
+        
+        <table class="adm-table">
+            <thead>
+                <tr>
+                    <th>Animal / Adotante</th>
+                    <th>Tempo de Adoção</th>
+                    <th>Relato de Adaptação</th>
+                    <th>Foto do Pet no Lar</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-acompanhamento-ong">
+                </tbody>
+        </table>
+        
+        <div id="mensagem-vazia-acompanhamento-ong" style="display: block; text-align: center; margin-top: 20px; color: #777;">
+            Nenhum animal em período de acompanhamento pós-adoção no momento.
         </div>
     </section>
 
